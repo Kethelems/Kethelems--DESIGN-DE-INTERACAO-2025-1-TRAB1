@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  padding-left: 50px;
+}
+
+
+/* Container do Menu pré-visualização */
+#menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container da imagem */
+.menu-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Logo do menu */
+.menu-logo {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.editor-container,
+.preview-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#menu-form label {
+  font-weight: 600;
+}
+
+#menu-preview.menu {
+  min-height: 200px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.menu-title {
+  font-weight: bold;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu-list li {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#items-container .item-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#items-container .item-text {
+  flex: 1;
+  padding: 6px;
+  background-color: #eee;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+#items-container button {
+  white-space: nowrap;
+}
+
+/* Estilos para telas maiores que 1600px */
+@media (min-width: 1600px) {
+  body {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .editor-container,
+  .preview-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-md-6 {
+    width: 48%;
+  }
+
+  #menu-form {
+    width: 100%;
+  }
+
+  #menu-title,
+  #menu-image,
+  #background-color,
+  #text-color,
+  #hover-color,
+  #border-color,
+  #border-radius,
+  #menu-width,
+  #item-spacing,
+  #font-size,
+  #new-item {
+    width: 100%;
+  }
+}
+
+/* Responsividade para telas menores que 1600px */
+@media (max-width: 1599px) {
+  .editor-container,
+  .preview-container {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #menu-title,
+  #menu-image,
+  #background-color,
+  #text-color,
+  #hover-color,
+  #border-color,
+  #border-radius,
+  #menu-width,
+  #item-spacing,
+  #font-size,
+  #new-item {
+    width: 100%;
+  }
+}
