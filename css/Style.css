@@ -50,7 +50,7 @@ h1 {
 }
 
 #menu-preview.menu {
-  min-height: 200px;
+  min-height: 100px;
   border-radius: 20px;
   padding: 10px;
 }
