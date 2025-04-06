@@ -128,7 +128,7 @@ function updateMenuPreview() {
     // Cria e configura o título do menu
     const title = document.createElement("div");
     title.classList.add("menu-title");
-    title.textContent = menuTitleInput.value || "Meu Menu";
+    title.textContent = menuTitleInput.value;
     menuPreview.appendChild(title);
     
     // Cria a lista de itens do menu
